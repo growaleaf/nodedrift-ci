@@ -1,0 +1,35 @@
+{
+  "name": "nodedrift-ci",
+  "version": "1.0.0",
+  "description": "Fail CI when your Node.js version claims disagree: .nvmrc, package.json engines.node, every Dockerfile's FROM node:X, and every GitHub Actions workflow's node-version all checked against each other.",
+  "license": "SEE LICENSE IN LICENSE",
+  "bin": {
+    "nodedrift-ci": "./cli.js"
+  },
+  "main": "cli.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node test/run.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/growaleaf/nodedrift-ci.git"
+  },
+  "keywords": [
+    "node",
+    "version",
+    "nvmrc",
+    "docker",
+    "github-actions",
+    "ci",
+    "continuous-integration",
+    "drift"
+  ],
+  "files": [
+    "cli.js",
+    "README.md",
+    "LICENSE"
+  ]
+}
